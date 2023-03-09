@@ -17,6 +17,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Frontend Mentor</title>
@@ -24,7 +25,7 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-lg bg-body-tertiary navbar-light px-5 justify-content-between"
+        class="navbar navbar-expand-lg bg-body-tertiary navbar-light px-5 py-5 justify-content-between"
       >
         <a class="navbar-brand" href="#">
           <img width="120" src="images/logo.svg" alt="" />
@@ -86,15 +87,9 @@
                 eaque eius harum accusantium laboriosam sapiente quis sequi
                 excepturi
               </p>
-              <div class="input-group mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Enter your email"
-                />
-                <button type="button" class="btn btn-flyo ms-3 shadow">
-                  Get started
-                </button>
+              <div class="form">
+                <input type="email" class="email-input" placeholder="Enter your email"/>
+                <button type="button" class="btn btn-flyo shadow"> Get started</button>
               </div>
             </div>
             
@@ -112,7 +107,7 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <div class="my-4">
-              <h2 class="mb-4">Stay productive wherever you are</h2>
+              <h2 class="mb-4 text-center text-md-start">Stay productive wherever you are</h2>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Voluptatum blanditiis deserunt illum pariatur accusamus enim
@@ -126,7 +121,10 @@
             </div>
 
           
-            <a href="#" class="cta">See how fylo work</a>
+            <div class="cta">
+              <a href="#" class="nav-link">See how fylo work <i class='bx bxs-right-arrow-circle'></i></a>
+            </div>
+            
 
             <div class="card my-5 shadow rounded">
               <div class="card-body p-4">
@@ -171,12 +169,46 @@
 
     <footer>
       <div class="container">
-        <img src="images/logo.svg" alt="">
+        <img src="images/logo.svg" class="mb-5" alt="">
         <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
+          <div class="col-md-3 mb-5">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"> 
+                <a class="nav-link p-0 footer-text" href="tel:+2348145302579">
+                  <img src="images/icon-phone.svg" alt="" class="me-3"> 
+                  Phone: +1-543-123-4567
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 footer-text" href="mailto:agbajee835@gmail.com"> 
+                  <img src="images/icon-email.svg" alt="" class="me-3"> 
+                  example@flyo.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-5">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"> <a class="nav-link p-0 footer-text" href="#">About Us</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 footer-text" href="#">Jobs</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 footer-text" href="#">Press</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 footer-text" href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-5">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"> <a class="nav-link p-0 footer-text" href="#">Contact Us</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 footer-text" href="#">Terms</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 footer-text" href="#">Privacy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center">
+              <a class="nav-link footer-text footer-icon" href="#"><i class="bx bxl-facebook"></i></a>
+              <a class="nav-link footer-text footer-icon" href="#"><i class="bx bxl-twitter"></i></a>
+              <a class="nav-link footer-text footer-icon" href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
