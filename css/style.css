@@ -14,7 +14,6 @@
     --active-state:#517bec;
 }
 
-
 body{
     background-color: #ffff;
     font-family: 'Open Sans';
@@ -26,6 +25,10 @@ h1,h2,h3,h4,h5{
     color: var(--primary-dark-blue);
     line-height: 40px;
 }
+.navbar-brand img{
+    width: 150px;
+}
+
 .upper{
     padding: 50px 0;
 }
@@ -65,12 +68,7 @@ h1,h2,h3,h4,h5{
     color: #0bcc58;
     text-decoration: underline;
 }
-.card{
-    background-color: #ffff;
-    width: 400px;
-    /* padding: 26px; */
-    
-}
+
 .card img{
     width: 50px;
     border-radius: 70px;
@@ -110,7 +108,15 @@ footer .footer-icon{
     padding:5px 10px;
     margin: 0 5px;
 }
+@media only screen and (min-width: 1200px) {
+    .container{
+        margin: 10px 50px !important;
+    }
+}
 @media only screen and (max-width: 600px) {
+    .navbar-brand img{
+        width: 100px;
+    }
     .upper .intro-text{
         padding: 10px 10px;
         text-align: center;
